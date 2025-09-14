@@ -19,6 +19,4 @@
 - **Dockerfile** – the recipe instructions for building an image.  
 - **Build** – turning a Dockerfile into an image.  
 - **Run** – starting a container from an image.    
-- **Network** – how containers communicate with each other or the outside world.  
-
----
+- **Network** – how containers communicate with each other or the outside world.
