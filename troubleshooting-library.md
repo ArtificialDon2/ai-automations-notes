@@ -30,6 +30,8 @@ It means:
  - Try to grab the first result’s output.
  - If it’s not there → just show “No response generated” instead of breaking.
 
+---
+
 ## 4. Bad request (Gmail Send Message)
 **What happened:** Gmail threw a "Bad Request" error.
 **Why:** Improperly formatted "To" field.
