@@ -12,9 +12,11 @@
 **What happened:** Ollama refused to start because port 11434 was busy.
 **Why:** An old Ollama process was still running in the background.
 **Fix:**
- - Checked with netstat -ano | findstr 11434
- - Found the process in Task Manager and killed it.
- - Restarted Ollama with `Ollama serve`.
+ - `ollama list     # shows installed models`
+ `ollama run <model-name>   # starts the model you want`
+ - Check with `netstat -ano | findstr 11434` (if we're not sure what's hogging the port)
+ - Find the process in Task Manager and kill it.
+ - Restart Ollama with `Ollama serve`.
 
 ---
 
@@ -32,6 +34,8 @@ It means:
 
 ---
 
+---
+
 ## 4. Bad request (Gmail Send Message)
 **What happened:** Gmail threw a "Bad Request" error.
 **Why:** Improperly formatted "To" field.
@@ -40,3 +44,7 @@ It means:
  - Reference it like:
     `{{$json["email"]}}`
  - Double-check capitalization and spelling.
+
+---
+
+## 5. 

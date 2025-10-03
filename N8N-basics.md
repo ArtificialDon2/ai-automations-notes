@@ -29,4 +29,12 @@
 
 ---
 
-## 
+## DebugHelper
+ - Lets you **see the exact data** flowing through at that point.  
+- Modes:  
+  - **Throw Error** → Stops the workflow so you can inspect the data.  
+  - **Log Output** → Shows the data but lets the workflow continue.  
+  - **Nothing** → Ignores the data (useful if you leave it in production).  
+- Debug is useful when:  
+  - You’re not sure if earlier nodes are outputting the data you expect  
+  - An HTTP Request or Function node keeps failing and you need to check inputs
